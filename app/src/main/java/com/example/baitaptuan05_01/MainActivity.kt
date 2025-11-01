@@ -19,6 +19,7 @@ class MainActivity : ComponentActivity() {
                     startDestination = "login"
                 ) {
                     composable("login") { LoginScreen(navController) }
+                    composable("phoneLogin") { PhoneLoginScreen(navController) }
                     composable("profile") { ProfileScreen(navController) }
                 }
             }

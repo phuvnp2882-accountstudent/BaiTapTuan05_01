@@ -121,6 +121,24 @@ fun LoginScreen(navController: NavController) {
                 Text("SIGN IN WITH GOOGLE", fontWeight = FontWeight.SemiBold)
             }
 
+            Spacer(Modifier.height(10.dp))
+
+            Button(
+                onClick = {
+                    navController.navigate("phoneLogin")
+                },
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFF00BFA5),
+                    contentColor = Color.White
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                shape = RoundedCornerShape(16.dp)
+            ) {
+                Text("SIGN IN WITH PHONE", fontWeight = FontWeight.SemiBold)
+            }
+
             Spacer(Modifier.height(60.dp))
             Text("© UTHSmartTasks", color = Color.Gray, fontSize = 12.sp)
         }

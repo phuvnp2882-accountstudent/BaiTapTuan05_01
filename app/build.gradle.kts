@@ -42,6 +42,14 @@ android {
 
 dependencies {
 
+    // Firebase Auth
+    implementation("com.google.firebase:firebase-auth:23.1.0")
+    implementation("androidx.compose.material3:material3:1.3.0")
+
+    // Biểu tượng mặc định của Material 3 (như ArrowBack, Home,...)
+    implementation("androidx.compose.material:material-icons-core:1.7.5")
+    implementation("androidx.compose.material:material-icons-extended:1.7.5")
+
     implementation("androidx.navigation:navigation-compose:2.9.5")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
